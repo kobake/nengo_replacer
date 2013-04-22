@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>NengoReplacer</Name>
+    <ProjectGuid>{6db6170a-19a9-49b5-a055-5baa4a9d0d6d}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NengoReplacer</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>NengoReplacer</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="background.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="background.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="content.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="jquery-1.9.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="manifest.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="nengo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="options.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="popup.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="popup.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sample.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="test.html">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

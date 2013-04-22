@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta lang="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="jquery-1.9.0.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="options.js" charset="utf-8"></script>
+    <title>NengoReplacer オプション</title>
+	<style type="text/css">
+		*
+		{
+			font-size: 10pt;
+		}
+		h1
+		{
+			border: none;
+			border-bottom: 1px solid #000;
+			font-size: 14pt;
+		}
+		h2
+		{
+			padding-top: 10px;
+			border: none;
+			border-bottom: 1px solid #000;
+			width: 300px;
+		}
+		button
+		{
+			/*
+			border: 1px solid #DDD;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			*/
+			background: #EEE;
+			color: #111;
+			width: 200px;
+			padding: 5px 0;
+			margin: 2px 0px;
+		}
+		button:disabled
+		{
+			color:#888;
+			
+		}
+		table
+		{
+			border: 1px solid #000;
+		}
+		
+	</style>
+</head>
+<body>
+<h1>JP NengoReplacer オプション</h1>
+<h2>変換方法</h2>
+<input type="radio" name="timings" value="0" />手動で変換 (拡張ボタンメニューから変換)<br />
+<input type="radio" name="timings" value="1" />自動で変換 (ページ読み込み時に変換)<br />
+
+<h2>表示方法</h2>
+<input type="radio" name="ways" value="0" />マウスオーバーで表示<br />
+<input type="radio" name="ways" value="1" />括弧による注釈を挿入<br />
+<input type="radio" name="ways" value="2" />完全に置換<br />
+
+<h2>表示色</h2>
+<table style="background-image:url(bg.png);"><tr><td style="padding-right:10px;">
+<input type="radio" name="colors" value="0" id="color0" /> <label id="colorlabel0" for="color0" style="">ABCDEFG</label> (変更しない)<br />
+<input type="radio" name="colors" value="1" id="color1" /> <label id="colorlabel1" for="color1" style="background-color:#ffa; color:#f00;">ABCDEFG</label><br />
+<input type="radio" name="colors" value="2" id="color2" /> <label id="colorlabel2" for="color2" style="background-color:#444; color:#ff0;">ABCDEFG</label><br />
+<input type="radio" name="colors" value="3" id="color3" /> <label id="colorlabel3" for="color3" style="background-color:#faa; color:#000;">ABCDEFG</label><br />
+<input type="radio" name="colors" value="4" id="color4" /> <label id="colorlabel4" for="color4" style="background-color:#af0; color:#440;">ABCDEFG</label><br />
+<input type="radio" name="colors" value="5" id="color5" /> <label id="colorlabel5" for="color5" style="background-color:#44f; color:#ff0;">ABCDEFG</label><br />
+<input type="radio" name="colors" value="6" id="color6" /> <label id="colorlabel6" for="color6" >ABCDEFG</label> (カスタム) <input type="text" id="style" name="style" value="" style="width:400px; font-family:'ＭＳ ゴシック'; font-size:9pt;" /><br />
+</td></tr></table>
+
+
+<br />
+<br />
+<button id="save" disabled>保存</button>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html />
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+	<style type="text/css">
+		div.title
+		{
+			border: 1px solid #DDD;
+			border-radius: 4px;
+			border-left: none;
+			border-right: none;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			color: #111;
+			width: 200px;
+			padding: 5px 0;
+			margin-bottom: 10px;
+			text-align: center;
+			font-weight: bold;
+		}
+		button
+		{
+			background: #EEE;
+			border: 1px solid #DDD;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			color: #111;
+			width: 200px;
+			padding: 5px 0;
+			margin: 2px 0px;
+		}
+		div.border
+		{
+			border: none;
+			border-bottom: 1px dashed #ccc;
+			background: #999;
+			margin: 4px 0px;
+		}
+	</style>
+</head>
+<body style="min-width:200px;">
+
+<div class="title">JP Nengo replacer</div>
+<button id="menu_whole">完全に置換</button><br />
+<button id="menu_kakko">括弧による注釈を挿入</button><br />
+<button id="menu_mouse">マウスオーバーで表示</button><br />
+<div class="border"></div>
+<button id="menu_repair">元に戻す</button><br />
+
+</body>
+</html>
