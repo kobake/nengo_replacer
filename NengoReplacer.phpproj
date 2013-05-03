@@ -20,34 +20,34 @@
     <Content Include="background.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="background.js">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="content.js">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="icon.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="jquery-1.9.0.min.js">
+    <Content Include="js\background.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\content.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery-1.9.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\nengo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\popup.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="manifest.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="nengo.js">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="options.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="options.js">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="popup.html">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="popup.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="sample.html">
@@ -56,5 +56,8 @@
     <Content Include="test.html">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
   </ItemGroup>
 </Project>

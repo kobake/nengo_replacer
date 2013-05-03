@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "JP nengo replacer",
-  "version": "1.0",
-  "description": "ページ内の和暦を西暦に変換します",
+  "version": "1.1",
+  "description": "ページ内の和暦年号を西暦に変換します",
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
@@ -14,7 +14,7 @@
     "default_popup": "popup.html"
   },
   "background": {
-	"script": "background.js",
+	"script": "js/background.js",
     "page": "background.html"
   },
   "options_page": "options.html",
@@ -24,7 +24,7 @@
   "content_scripts": [
     {
       "matches": [ "http://*/*", "https://*/*", "file:///*" ],
-      "js": [ "jquery-1.9.0.min.js", "nengo.js", "content.js" ],
+      "js": [ "js/jquery-1.9.0.min.js", "js/nengo.js", "js/content.js" ],
       "run_at": "document_end"
     }
   ]
