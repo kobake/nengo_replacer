@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "JP nengo replacer",
-  "version": "1.1",
+  "version": "1.1.1",
   "description": "ページ内の和暦年号を西暦に変換します",
   "icons": {
     "48": "icon48.png",
